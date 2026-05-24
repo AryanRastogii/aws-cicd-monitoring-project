@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/c1x1m4c7
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 553290195026.dkr.ecr.us-east-1.amazonaws.com
       - REPOSITORY_URI=public.ecr.aws/c1x1m4c7/cicd-demo-app:latest
       - IMAGE_TAG=latest
 
