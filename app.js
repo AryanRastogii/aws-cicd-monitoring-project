@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('CI/CD Pipe Running Successfully!');
+    res.send('CI/CD Pipeline Running Successfully!');
 });
 
 app.get('/health', (req, res) => {
